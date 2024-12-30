@@ -5,20 +5,20 @@
 class Sitectl < Formula
   desc ""
   homepage "https://github.com/libops/sitectl"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/LibOps/sitectl/releases/download/0.0.1/sitectl_Darwin_x86_64.tar.gz"
-      sha256 "e60c67ce7b8bda0ecb21e7219d818a3f2af69e1dd4fe1cdf93cdd9d45e48a122"
+      url "https://github.com/LibOps/sitectl/releases/download/0.0.2/sitectl_Darwin_x86_64.tar.gz"
+      sha256 "172e70c3ea374c4fbae6a5cbdc8c991b6ba19f30110c5b597d2e76767461c57f"
 
       def install
         bin.install "sitectl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/LibOps/sitectl/releases/download/0.0.1/sitectl_Darwin_arm64.tar.gz"
-      sha256 "e8e4ceabdeaffa9da27ca36d8b27830f47135db97ae2f5d577ad6c0bd0adf05a"
+      url "https://github.com/LibOps/sitectl/releases/download/0.0.2/sitectl_Darwin_arm64.tar.gz"
+      sha256 "378e5865b3c0d38aa8cd1d7698a032fea66d32966b961bba97d785485554732e"
 
       def install
         bin.install "sitectl"
@@ -29,8 +29,8 @@ class Sitectl < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/LibOps/sitectl/releases/download/0.0.1/sitectl_Linux_x86_64.tar.gz"
-        sha256 "4a7a4df18b177456b4182fd4a4937d2fdb7e6e8d1af0f4a14484e8d14715817d"
+        url "https://github.com/LibOps/sitectl/releases/download/0.0.2/sitectl_Linux_x86_64.tar.gz"
+        sha256 "b49be1d5428609dc560f11b85d8e423d52ec7f99cd2489b865aaad7f1f0f9c49"
 
         def install
           bin.install "sitectl"
@@ -39,8 +39,8 @@ class Sitectl < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/LibOps/sitectl/releases/download/0.0.1/sitectl_Linux_arm64.tar.gz"
-        sha256 "202b947b2d78428dca71582fc84565cc8487c58d6ab8069cab212a2589954f84"
+        url "https://github.com/LibOps/sitectl/releases/download/0.0.2/sitectl_Linux_arm64.tar.gz"
+        sha256 "f6663d1991a034ce4dd00abd31271ca34c40723df642c3b406976f8467443b8e"
 
         def install
           bin.install "sitectl"
